@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+* li {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #144a47;
+  background: -webkit-gradient(linear, left top, left bottom, from(#144a47), to(#055d57));
+  background: linear-gradient(180deg, #144a47 0%, #055d57 100%);
+}
+
+body .search {
+  height: 50px;
+  position: relative;
+}
+
+body .search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  text-indent: 5px;
+  padding: 15px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+body .search .btn {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: -webkit-transform 0.3 ease;
+  transition: -webkit-transform 0.3 ease;
+  transition: transform 0.3 ease;
+  transition: transform 0.3 ease, -webkit-transform 0.3 ease;
+  position: absolute;
+}
+
+body .search .btn i {
+  font-size: 20px;
+}
+
+body .search .btn:focus, body .search .input:focus {
+  outline: none;
+}
+
+body .active .input {
+  width: 200px;
+}
+
+body .active .btn {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+/*# sourceMappingURL=style.css.map */
